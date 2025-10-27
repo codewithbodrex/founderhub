@@ -4,7 +4,6 @@
 !/bootstrap/cache/.gitignore
 
 /.env
-/.env.*
 /storage/*
 !/storage/app/.gitignore
 !/storage/framework/.gitignore
