@@ -1,0 +1,51 @@
+# ===== Laravel / PHP =====
+/vendor/
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+/.env
+/.env.*
+/storage/*
+!/storage/app/.gitignore
+!/storage/framework/.gitignore
+!/storage/logs/.gitignore
+
+/public/storage
+/public/hot
+/public/build
+/public/mix-manifest.json
+
+# ===== Private / Large Files =====
+# Abaikan semua video besar di folder private/videos
+/storage/app/private/videos/*
+# Jika ingin abaikan semua file video di mana pun
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Kunci & sertifikat
+*.key
+*.pem
+
+# ===== Node / Vite =====
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+/dist/
+/.vite/
+
+# ===== IDE / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===== Testing / Coverage =====
+/coverage/
+.phpunit.result.cache
+
+# ===== Misc =====
+/.env.backup
