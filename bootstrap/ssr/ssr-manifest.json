@@ -1,0 +1,128 @@
+{
+  "\u0000plugin-vue:export-helper": [
+    "/build/assets/_plugin-vue_export-helper-1tPrXgE0.js"
+  ],
+  "node_modules/laravel-vite-plugin/inertia-helpers/index.js": [],
+  "resources/js/Components/BlogSection.vue": [
+    "/build/assets/BlogSection-D43iAMgj.js"
+  ],
+  "resources/js/Components/Checkbox.vue": [
+    "/build/assets/Login-DWJM6qi8.js"
+  ],
+  "resources/js/Components/DangerButton.vue": [
+    "/build/assets/DeleteUserForm-DFRCl3Sh.js"
+  ],
+  "resources/js/Components/FeatureCourses.vue": [
+    "/build/assets/BlogSection-D43iAMgj.js"
+  ],
+  "resources/js/Components/Footer.vue": [
+    "/build/assets/Footer-D_h-pvsH.js"
+  ],
+  "resources/js/Components/FounderRoles.vue": [
+    "/build/assets/BlogSection-D43iAMgj.js"
+  ],
+  "resources/js/Components/HeroSection.vue": [
+    "/build/assets/Welcome-pe63J8gK.js"
+  ],
+  "resources/js/Components/HeroSectionAuthCards.vue": [
+    "/build/assets/Dashboard-CarIwqUk.js"
+  ],
+  "resources/js/Components/InputError.vue": [
+    "/build/assets/TextInput-Bq3bXff-.js"
+  ],
+  "resources/js/Components/InputLabel.vue": [
+    "/build/assets/TextInput-Bq3bXff-.js"
+  ],
+  "resources/js/Components/MentorCta.vue": [
+    "/build/assets/BlogSection-D43iAMgj.js"
+  ],
+  "resources/js/Components/Modal.vue": [
+    "/build/assets/DeleteUserForm-DFRCl3Sh.js"
+  ],
+  "resources/js/Components/Navbar.vue": [
+    "/build/assets/Navbar-DmIFRQXd.js"
+  ],
+  "resources/js/Components/PrimaryButton.vue": [
+    "/build/assets/PrimaryButton-CZbnR4E4.js"
+  ],
+  "resources/js/Components/SecondaryButton.vue": [
+    "/build/assets/DeleteUserForm-DFRCl3Sh.js"
+  ],
+  "resources/js/Components/TextInput.vue": [
+    "/build/assets/TextInput-Bq3bXff-.js"
+  ],
+  "resources/js/Components/TopicCategories.vue": [
+    "/build/assets/BlogSection-D43iAMgj.js"
+  ],
+  "resources/js/Components/course/CourseDetail.vue": [
+    "/build/assets/Show-nzlkZju3.js"
+  ],
+  "resources/js/Components/course/CourseHeader.vue": [
+    "/build/assets/Show-nzlkZju3.js"
+  ],
+  "resources/js/Components/course/CourseRelated.vue": [
+    "/build/assets/Show-nzlkZju3.js"
+  ],
+  "resources/js/Components/course/CourseSidebarCard.vue": [
+    "/build/assets/Show-nzlkZju3.js"
+  ],
+  "resources/js/Layouts/GuestLayout.vue": [
+    "/build/assets/GuestLayout-Bn7udMgM.js"
+  ],
+  "resources/js/Pages/Auth/ConfirmPassword.vue": [
+    "/build/assets/ConfirmPassword-BuTJLvyw.js"
+  ],
+  "resources/js/Pages/Auth/ForgotPassword.vue": [
+    "/build/assets/ForgotPassword-Bky55NhU.js"
+  ],
+  "resources/js/Pages/Auth/Login.vue": [
+    "/build/assets/Login-DWJM6qi8.js"
+  ],
+  "resources/js/Pages/Auth/Register.vue": [
+    "/build/assets/Register-Cd1VqOCe.js"
+  ],
+  "resources/js/Pages/Auth/ResetPassword.vue": [
+    "/build/assets/ResetPassword-Bx7e2RQt.js"
+  ],
+  "resources/js/Pages/Auth/SignIn.vue": [
+    "/build/assets/SignIn-BrUqWa3O.js"
+  ],
+  "resources/js/Pages/Auth/SignUp.vue": [
+    "/build/assets/SignUp-Ham2yYX-.js"
+  ],
+  "resources/js/Pages/Auth/VerifyEmail.vue": [
+    "/build/assets/VerifyEmail-BwpVKeo_.js"
+  ],
+  "resources/js/Pages/Courses/Show.vue": [
+    "/build/assets/Show-nzlkZju3.js"
+  ],
+  "resources/js/Pages/Courses/StartLearningPage.vue": [
+    "/build/assets/StartLearningPage-RNUrrxEr.js"
+  ],
+  "resources/js/Pages/Dashboard.vue": [
+    "/build/assets/Dashboard-CarIwqUk.js"
+  ],
+  "resources/js/Pages/Profile/Edit.vue": [
+    "/build/assets/Edit-DYEABi2_.js"
+  ],
+  "resources/js/Pages/Profile/Partials/DeleteUserForm.vue": [
+    "/build/assets/DeleteUserForm-DFRCl3Sh.js"
+  ],
+  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue": [
+    "/build/assets/UpdatePasswordForm-CYYEVMV-.js"
+  ],
+  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue": [
+    "/build/assets/UpdateProfileInformationForm-BwLAAesb.js"
+  ],
+  "resources/js/Pages/RoleTest/Index.vue": [
+    "/build/assets/Index-cB2UfH8B.js"
+  ],
+  "resources/js/Pages/RoleTest/Result.vue": [
+    "/build/assets/Result-YYytb-wY.js"
+  ],
+  "resources/js/Pages/Welcome.vue": [
+    "/build/assets/Welcome-pe63J8gK.js"
+  ],
+  "resources/js/ssr.js": [],
+  "vendor/tightenco/ziggy/dist/index.js": []
+}
