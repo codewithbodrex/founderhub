@@ -10,10 +10,7 @@
 !/storage/framework/.gitignore
 !/storage/logs/.gitignore
 
-/public/storage
-/public/hot
-/public/build
-/public/mix-manifest.json
+
 
 # ===== Private / Large Files =====
 # Abaikan semua video besar di folder private/videos
