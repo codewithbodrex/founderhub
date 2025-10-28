@@ -64,7 +64,7 @@ class RoleTestController extends Controller
 
         if (Auth::check()) {
             $this->persistArray($payload, Auth::id());
-            session()->forget('role_test');
+            // Don't clear session yet - let result page handle it
             Cache::forget("role_test:{$token}");
             Cookie::queue(Cookie::forget('role_test_token'));
         }
@@ -75,7 +75,12 @@ class RoleTestController extends Controller
     public function result()
     {
         abort_unless(session()->has('role_test'), 404);
-        return Inertia::render('RoleTest/Result', session('role_test'));
+        $data = session('role_test');
+        
+        // Clear session after getting the data
+        session()->forget('role_test');
+        
+        return Inertia::render('RoleTest/Result', $data);
     }
 
     /** Persist dari SESSION lama (kompat) */
