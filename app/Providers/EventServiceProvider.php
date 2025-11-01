@@ -23,7 +23,13 @@ class EventServiceProvider extends ServiceProvider
         ],
         \Illuminate\Auth\Events\Registered::class => [
         \App\Listeners\PersistRoleTestAfterLogin::class,
-        ],        
+        ],
+        \Illuminate\Auth\Events\Login::class => [
+        \App\Listeners\PersistRoleTestAfterAuth::class,
+        ],
+        \Illuminate\Auth\Events\Registered::class => [
+        \App\Listeners\PersistRoleTestAfterAuth::class,
+        ],                
     ];
 
     /**

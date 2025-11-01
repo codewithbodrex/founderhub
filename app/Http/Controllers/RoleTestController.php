@@ -72,16 +72,30 @@ class RoleTestController extends Controller
         return redirect()->route('role-test.result');
     }
 
-    public function result()
-    {
-        abort_unless(session()->has('role_test'), 404);
-        $data = session('role_test');
-        
-        // Clear session after getting the data
-        session()->forget('role_test');
-        
-        return Inertia::render('RoleTest/Result', $data);
+public function result(Request $request)
+{
+    // 1) Coba ambil dari session
+    $data = session('role_test');
+
+    // 2) Kalau session kosong, coba ambil dari cache via cookie token
+    if (!$data) {
+        $token = $request->cookie('role_test_token');
+        if ($token && Cache::has("role_test:{$token}")) {
+            $data = Cache::get("role_test:{$token}");
+            // isi lagi ke session agar halaman bisa dirender
+            session(['role_test' => $data]);
+            // redirect sekali agar alur tetap sama (result() selalu baca dari session)
+            return redirect()->route('role-test.result');
+        }
+        abort(404);
     }
+
+    // 3) Hapus session setelah dibaca (seperti sebelumnya)
+    session()->forget('role_test');
+
+    return Inertia::render('RoleTest/Result', $data);
+}
+
 
     /** Persist dari SESSION lama (kompat) */
     public function persistFromSession(?int $userId = null): void
@@ -111,12 +125,23 @@ class RoleTestController extends Controller
             'dominant_role'   => $data['dominant_role'],
         ]);
 
-        if ($userId && auth()->user()) {
-            $user = auth()->user();
-            $user->role = $data['dominant_role'];
-            $user->save();
+        if ($userId) {
+            \App\Models\User::whereKey($userId)->update([
+                'role' => $data['dominant_role'],
+            ]);
         }
 
         session(['last_role_test_id' => $submission->id]);
     }
+
+public function persistFromCookieCacheForUserId(int $userId): void
+{
+    $token = request()->cookie('role_test_token');
+    if ($token && Cache::has("role_test:{$token}")) {
+        $payload = Cache::pull("role_test:{$token}"); // sekalian hapus di cache
+        $this->persistArray($payload, $userId);
+        Cookie::queue(Cookie::forget('role_test_token'));
+        // opsional: session(['role_test' => $payload]);
+    }
+}    
 }

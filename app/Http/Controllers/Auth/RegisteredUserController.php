@@ -46,6 +46,9 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
+        app(\App\Http\Controllers\RoleTestController::class)
+        ->persistFromCookieCacheForUserId($user->id);
+
 
         return redirect(RouteServiceProvider::HOME);
     }
